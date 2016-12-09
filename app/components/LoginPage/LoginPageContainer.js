@@ -2,15 +2,15 @@ const React = require('react');
 var Navbar = require('../Navbar/Navbar');
 
 
-const RegisterForm = React.createClass({
+const LoginPageContainer = React.createClass({
   render: function() {
     return(
       <div>
-      <Navbar />
-      <p>Hello, I am Signup Page!</p>
+       <Navbar />
+      <p>Hello, I am Login page!</p>
       </div>
       )
   }
 });
 
-module.exports = RegisterForm;
+module.exports = LoginPageContainer;

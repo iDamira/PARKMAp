@@ -57,11 +57,7 @@
   \**********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(/*! react */ 2);
-	var ReactDOM = __webpack_require__(/*! react-dom */ 33);
-	var routes = __webpack_require__(/*! ./routes/routes */ 179);
-	
-	ReactDOM.render(routes, document.getElementById('app'));
+	'use strict';var React=__webpack_require__(/*! react */ 2);var ReactDOM=__webpack_require__(/*! react-dom */ 33);var routes=__webpack_require__(/*! ./routes/routes */ 179);ReactDOM.render(routes,document.getElementById('app'));
 
 /***/ },
 /* 2 */
@@ -22008,22 +22004,8 @@
   \******************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	const React = __webpack_require__(/*! react */ 2);
-	const ReactRouter = __webpack_require__(/*! react-router */ 180);
-	const Router = ReactRouter.Router;
-	const Route = ReactRouter.Route;
-	// const IndexRoute = ReactRouter.IndexRoute;
-	const hashHistory = ReactRouter.hashHistory;
-	
-	const LandingPage = __webpack_require__(/*! ../components/LandingPage/LandingPage */ 243);
-	
-	const routes = React.createElement(
-	  Router,
-	  { history: hashHistory },
-	  React.createElement(Route, { path: '/', component: LandingPage })
-	);
-	
-	module.exports = routes;
+	'use strict';var React=__webpack_require__(/*! react */ 2);var ReactRouter=__webpack_require__(/*! react-router */ 180);var Router=ReactRouter.Router;var Route=ReactRouter.Route;// const IndexRoute = ReactRouter.IndexRoute;
+	var hashHistory=ReactRouter.hashHistory;var LandingPage=__webpack_require__(/*! ../components/LandingPage/LandingPage */ 243);var LoginPageContainer=__webpack_require__(/*! ../components/LoginPage/LoginPageContainer */ 245);var TutorialPage=__webpack_require__(/*! ../components/TutorialPage/TutorialPageContainer */ 247);var RegisterPage=__webpack_require__(/*! ../components/RegisterPage/RegisterFormContainer */ 248);var MapViewPage=__webpack_require__(/*! ../components/MapViewPage/MapViewPageContainer */ 249);var routes=React.createElement(Router,{history:hashHistory},React.createElement(Route,{path:'/',component:LandingPage}),React.createElement(Route,{path:'login',component:LoginPageContainer}),React.createElement(Route,{path:'tutorial',component:TutorialPage}),React.createElement(Route,{path:'register',component:RegisterPage}),React.createElement(Route,{path:'map',component:MapViewPage}));module.exports=routes;
 
 /***/ },
 /* 180 */
@@ -27873,37 +27855,53 @@
   \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var React = __webpack_require__(/*! react */ 2);
-	var ReactRouter = __webpack_require__(/*! react-router */ 180);
-	var Link = ReactRouter.Link;
-	
-	function LandingPage() {
-	  return React.createElement(
-	    'div',
-	    null,
-	    React.createElement(
-	      'h1',
-	      null,
-	      'PARKMA(p)'
-	    ),
-	    React.createElement(
-	      'p',
-	      null,
-	      'Parking Buddy'
-	    ),
-	    React.createElement(
-	      Link,
-	      { to: '/tutorial' },
-	      React.createElement(
-	        'button',
-	        { type: 'button' },
-	        'Register'
-	      )
-	    )
-	  );
-	}
-	
-	module.exports = LandingPage;
+	'use strict';var React=__webpack_require__(/*! react */ 2);var ReactRouter=__webpack_require__(/*! react-router */ 180);var Navbar=__webpack_require__(/*! ../Navbar/Navbar */ 246);function LandingPage(){return React.createElement('div',null,React.createElement(Navbar,null),React.createElement('h1',null,'PARKMA(p)'),React.createElement('p',null,'Parking Buddy'));}module.exports=LandingPage;
+
+/***/ },
+/* 244 */,
+/* 245 */
+/*!********************************************************!*\
+  !*** ./app/components/LoginPage/LoginPageContainer.js ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';var React=__webpack_require__(/*! react */ 2);var Navbar=__webpack_require__(/*! ../Navbar/Navbar */ 246);var LoginPageContainer=React.createClass({displayName:'LoginPageContainer',render:function render(){return React.createElement('div',null,React.createElement(Navbar,null),React.createElement('p',null,'Hello, I am Login page!'));}});module.exports=LoginPageContainer;
+
+/***/ },
+/* 246 */
+/*!*****************************************!*\
+  !*** ./app/components/Navbar/Navbar.js ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';var React=__webpack_require__(/*! react */ 2);var ReactRouter=__webpack_require__(/*! react-router */ 180);var Link=ReactRouter.Link;function Navbar(){return React.createElement('div',null,React.createElement(Link,{to:'/tutorial'},React.createElement('button',{type:'button'},'Tutorial')),React.createElement(Link,{to:'/login'},React.createElement('button',{type:'button'},'Login')),React.createElement(Link,{to:'/register'},React.createElement('button',{type:'button'},'Register')),React.createElement(Link,{to:'/map'},React.createElement('button',{type:'button'},'Go To Map')));}module.exports=Navbar;
+
+/***/ },
+/* 247 */
+/*!**************************************************************!*\
+  !*** ./app/components/TutorialPage/TutorialPageContainer.js ***!
+  \**************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';var React=__webpack_require__(/*! react */ 2);var ReactRouter=__webpack_require__(/*! react-router */ 180);var Navbar=__webpack_require__(/*! ../Navbar/Navbar */ 246);function TutorialPage(){return React.createElement('div',null,React.createElement(Navbar,null),React.createElement('p',null,'Hello, I am How To Page!'));}module.exports=TutorialPage;
+
+/***/ },
+/* 248 */
+/*!**************************************************************!*\
+  !*** ./app/components/RegisterPage/RegisterFormContainer.js ***!
+  \**************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';var React=__webpack_require__(/*! react */ 2);var Navbar=__webpack_require__(/*! ../Navbar/Navbar */ 246);var RegisterForm=React.createClass({displayName:'RegisterForm',render:function render(){return React.createElement('div',null,React.createElement(Navbar,null),React.createElement('p',null,'Hello, I am Signup Page!'));}});module.exports=RegisterForm;
+
+/***/ },
+/* 249 */
+/*!************************************************************!*\
+  !*** ./app/components/MapViewPage/MapViewPageContainer.js ***!
+  \************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';var React=__webpack_require__(/*! react */ 2);var Navbar=__webpack_require__(/*! ../Navbar/Navbar */ 246);var MapView=React.createClass({displayName:'MapView',render:function render(){return React.createElement('div',null,React.createElement(Navbar,null),React.createElement('p',null,'Hello, I am Map View Page!'));}});module.exports=MapView;
 
 /***/ }
 /******/ ]);

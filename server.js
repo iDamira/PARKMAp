@@ -13,6 +13,7 @@ const PORT = process.argv[2] || process.env.PORT || 3000;
 app.use(logger('dev'));
 
 app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'media')));
 
 app.use(bodyParser.json());
 
