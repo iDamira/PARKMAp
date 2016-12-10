@@ -1,5 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var routes = require('./routes/routes');
+import { Router, Route } from 'react-router'
+const routes = require('./routes/routes');
+
 
 ReactDOM.render(routes, document.getElementById('app'));

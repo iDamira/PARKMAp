@@ -25,11 +25,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'PBandJAMD',
+      title: 'PAPRKMAp',
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
-      appMountId: 'root-container'
+      appMountId: 'app'
     }),
     new ExtractTextPlugin('/css/[name].css', {
       allChunks: true
@@ -41,7 +41,7 @@ module.exports = {
   ],
 
   module : {
-    include: path.join(__dirname, 'PARKMAp'),
+    include: path.join(__dirname, 'dist'),
     loaders: [
       {
         test: /\.css$/,
