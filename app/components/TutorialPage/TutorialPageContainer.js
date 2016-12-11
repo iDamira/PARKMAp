@@ -5,7 +5,6 @@ var Navbar = require('../Navbar/Navbar');
 function TutorialPage () {
   return (
     <div>
-    <Navbar />
     <p>Hello, I am How To Page!</p>
     </div>
   )

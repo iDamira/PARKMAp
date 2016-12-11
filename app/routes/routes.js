@@ -12,11 +12,12 @@ const MapViewPage = require('../components/MapViewPage/MapViewPageContainer');
 
 const routes = (
 <Router history={hashHistory}>
-  <Route path='/' component={LandingPage} />
-  <Route path='login' component={LoginPageContainer}/>
-  <Route path='tutorial' component={TutorialPage} />
-  <Route path='register' component={RegisterPage} />
-  <Route path='map' component={MapViewPage} />
+  <Route path='/' component={LandingPage}>
+    <Route path='/login' component={LoginPageContainer}/>
+    <Route path='/tutorial' component={TutorialPage} />
+    <Route path='/register' component={RegisterPage} />
+    <Route path='/map' component={MapViewPage} />
+  </Route>
 </Router>
 );
 

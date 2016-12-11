@@ -2,16 +2,18 @@ var React = require('react');
 var ReactRouter = require('react-router');
 var Navbar = require('../Navbar/Navbar');
 
-function LandingPage () {
-  return (
+const LandingPage = React.createClass({
+  render: function() {
+    return(
     <div>
       <Navbar />
-      <h1>PARKMA(p)</h1>
+      <h1>PARKMA</h1>
       <p>Parking Buddy</p>
-      <img src="http://i.imgur.com/YVc7urW.png" alt="" />
+      {this.props.children}
     </div>
-  )
-}
+    )
+  }
+});
 
 module.exports = LandingPage;
 
