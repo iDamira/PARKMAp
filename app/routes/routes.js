@@ -8,7 +8,7 @@ const LandingPage = require('../components/LandingPage/LandingPage');
 const LoginPageContainer = require('../components/LoginPage/LoginPageContainer');
 const TutorialPage = require('../components/TutorialPage/TutorialPageContainer');
 const RegisterPage = require('../components/RegisterPage/RegisterFormContainer');
-const MapViewPage = require('../components/MapViewPage/MapViewPageContainer');
+const MapContainer = require('../components/MapViewPage/MapViewPageContainer');
 
 const routes = (
 <Router history={hashHistory}>
@@ -16,7 +16,7 @@ const routes = (
     <Route path='/login' component={LoginPageContainer}/>
     <Route path='/tutorial' component={TutorialPage} />
     <Route path='/register' component={RegisterPage} />
-    <Route path='/map' component={MapViewPage} />
+    <Route path='/map' component={MapContainer} />
   </Route>
 </Router>
 );

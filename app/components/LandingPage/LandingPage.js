@@ -1,20 +1,23 @@
-var React = require('react');
-var ReactRouter = require('react-router');
-var Navbar = require('../Navbar/Navbar');
+const React = require('react');
+const Navbar = require('../Navbar/Navbar');
+const Footer = require('../Footer/Footer');
+
+import './LandingPageContainer.css';
 
 const LandingPage = React.createClass({
-  render: function() {
+  render: function(){
     return(
-    <div>
-      <Navbar />
-      <h1>PARKMA</h1>
-      <p>Parking Buddy</p>
-      {this.props.children}
-    </div>
+     <div id="landing-page-container">
+        <Navbar />
+        <h1>PARKMA</h1>
+        <div id="logo"></div>
+        <p>Parking Buddy App</p>
+        {this.props.children}
+        <Footer />
+     </div>
     )
   }
 });
 
 module.exports = LandingPage;
-
 

@@ -21,10 +21,15 @@
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
+    "google-maps-react": "^1.0.19",
+    "method-override": "^2.3.6",
     "morgan": "^1.7.0",
+    "node-fetch": "^1.6.3",
     "path": "^0.12.7",
     "pg-promise": "^5.2.7",
-    "dotenv": "^2.0.0"
+    "react-geojson-cluster": "0.0.7",
+    "react-gmaps": "^1.5.0",
+    "react-google-maps": "^4.11.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -52,7 +57,3 @@
     "webpack": "^1.13.1"
   }
 }
-
-
-
-

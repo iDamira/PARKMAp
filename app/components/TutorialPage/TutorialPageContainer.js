@@ -1,13 +1,13 @@
-var React = require('react');
-var ReactRouter = require('react-router');
-var Navbar = require('../Navbar/Navbar');
+const React = require('react');
 
-function TutorialPage () {
-  return (
+const TutorialPage = React.createClass({
+  render: function(){
+    return(
     <div>
-    <p>Hello, I am How To Page!</p>
+      <p>Hello, I am How To Page!</p>
     </div>
-  )
-}
+    )
+  }
+});
 
 module.exports = TutorialPage;

@@ -1,15 +1,15 @@
 const React = require('react');
-var Navbar = require('../Navbar/Navbar');
+import Map from './MapViewComponent.js';
 
-
-const MapView = React.createClass({
-  render: function() {
+const MapContainer = React.createClass({
+  render: function(){
     return(
-      <div>
-      <p>Hello, I am Map View Page!</p>
+      <div id="map-view-container">
+      <Map />
+        <p>MAP WILL BE HERE!!!!</p>
       </div>
-      )
+    )
   }
 });
 
-module.exports = MapView;
+module.exports = MapContainer;

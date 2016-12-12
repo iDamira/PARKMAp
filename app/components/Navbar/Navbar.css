@@ -1,0 +1,8 @@
+div .navbar_container {
+  background-color: #808098;
+  color: ghostwhite;
+}
+
+.navbar_container button{
+  padding: 10px;
+}
