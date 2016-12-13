@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import {Gmaps, Marker, InfoWindow, Circle} from 'react-gmaps';
 
 const coords = {
-  lat: 51.5258541,
-  lng: -0.08040660000006028
+  lat: 40.7128,
+  lng: -74.0059
 };
 
 const Map = React.createClass({
@@ -36,7 +36,7 @@ const Map = React.createClass({
         lng={coords.lng}
         zoom={12}
         loadingMessage={'Be happy'}
-        params={{v: '3.exp', key: 'GOOGLE_KEY'}}
+        params={{v: '3.exp', key: 'AIzaSyDxAfzw4fCbdoPYlOXv_9cxq_NMEYOLVlo'}}
         onMapCreated={this.onMapCreated}>
         <Marker
           lat={coords.lat}

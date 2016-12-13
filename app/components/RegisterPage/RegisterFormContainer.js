@@ -1,13 +1,14 @@
 const React = require('react');
+const RegisterForm = require('./RegisterForm');
 
-const RegisterForm = React.createClass({
+const RegisterFormContainer = React.createClass({
   render: function(){
     return(
       <div>
-        <p>Hello, I am Signup Page!</p>
+        <RegisterForm />
       </div>
     )
   }
 });
 
-module.exports = RegisterForm;
+module.exports = RegisterFormContainer;
