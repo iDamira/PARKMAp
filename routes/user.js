@@ -1,5 +1,5 @@
 const express = require('express');
-const { createUser, listUsers, getUserInfo } = require('../../models/user.js');
+const { createUser, listUsers, getUserInfo } = require('../models/user.js');
 const userRoute = express.Router();
 
 /**

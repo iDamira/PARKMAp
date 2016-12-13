@@ -1,31 +1,16 @@
 const React = require('react');
+import LoginForm from './LoginForm';
 
 const LoginPageContainer = React.createClass({
   render: function() {
     return(
-      <div>
-        <form>
-          <div id="login-input-container">
-            <input
-              className="form-control"
-              placeholder="Username"
-              type="text" />
-
-            <input
-              className="form-control"
-              placeholder="Password"
-              type="text" />
-          </div>
-
-          <div className="form-group col-sm-4 col-sm-offset-4">
-            <button
-            className="btn btn-block btn-success"
-            type="submit">
-            LogIn
-            </button>
-          </div>
-        </form>
-      </div>
+      <LoginForm
+        loginUsername={this.props.loginUsername}
+        updateLoginFormUsername = {this.props.updateLoginFormUsername}
+        loginPassword = {this.props.loginPassword}
+        updateLoginFormPassword = {this.props.updateLoginFormPassword}
+        handleLoginFormSubmit = {this.props.handleLoginFormSubmit}
+      />
     )
   }
 });

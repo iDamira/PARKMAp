@@ -1,5 +1,5 @@
 const express = require('express');
-const { logIn } = require('../../lib/passportStrategy.js');
+const { logIn } = require('../lib/passportStrategy.js');
 
 const authRoute = express.Router();
 
